@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильтры очистки воды для HoReCa — кафе, баров и ресторанов</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header__bottom">
+        <div class="wrapper">
+            <span class="logo"><img width="165" height="59" src="img/logo.png" title="ФильтроМир - фильтры для воды" alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"></span>
+            
+            <div class="header__bottom_item header__bottom_phone">
+                <div class="header__bottom_item-text">
+                    <a href="tel:+79381001848">+7 (938) 100-18-48</a>
+                    <div>
+                        <a class="open_modal" style="display: inline; font-size: 12px">Ваш город: </a><a class="open_modal" href="#city__click" style="display: inline; border-bottom: 1px dashed black; font-size: 12px;">Ростов</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header__bottom_wrap">
+                <form action="/products" class="block__search" target="_top">
+                    <input type="text" id="title-search-input" name="keyword" value="" placeholder="Поиск по товарам..." autocomplete="off">
+                    <button type="submit">
+                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                            <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            
+            <iframe src="https://yandex.ru/sprav/widget/rating-badge/23080508950?type=rating" width="150" height="50" frameborder="0" class="ya-rate"></iframe>
+            
+            <div class="flex compare-and-cart">
+                <div class="header__bottom_item header__bottom_comparison">
+                    <a href="https://filtromir.ru/compare" class="btn btn__icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3v18h18"/>
+                            <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                        </svg>
+                    </a>
+                    <div class="header__bottom_item-text">
+                        <a href="https://filtromir.ru/compare">Сравнение</a>
+                    </div>
+                </div>
+                
+                <div class="header__bottom_item header__bottom_basket" id="cart_informer">
+                    <a href="cart" class="btn btn__icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"/>
+                            <circle cx="20" cy="21" r="1"/>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                        </svg>
+                        <div class="quantity">0</div>
+                    </a>
+                    <div class="header__bottom_item-text">
+                        <a href="cart">В корзине</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="header__menu">
+        <div class="wrapper">
+            <nav class="header__menu-nav">
+                <a href="#" class="header__menu-link">ОБРАТНЫЙ ОСМОС</a>
+                <span class="menu-separator">|</span>
+                <a href="#" class="header__menu-link">ПРОТОЧНЫЕ ФИЛЬТРЫ</a>
+                <span class="menu-separator">|</span>
+                <a href="#" class="header__menu-link">ФИЛЬТРЫ НА ВЕСЬ ДОМ</a>
+                <span class="menu-separator">|</span>
+                <a href="#" class="header__menu-link">МАГИСТРАЛЬНЫЕ ФИЛЬТРЫ</a>
+                <span class="menu-separator">|</span>
+                <a href="#" class="header__menu-link">СМЕННЫЕ ФИЛЬТРЫ</a>
+                <span class="menu-separator">|</span>
+                <a href="#" class="header__menu-link">КОМПЛЕКТУЮЩИЕ К ФИЛЬТРАМ</a>
+                <span class="menu-separator">|</span>
+                <a href="#" class="header__menu-link">УСЛУГИ</a>
+            </nav>
+        </div>
+    </div>
+    
+    <section class="benefits">
+        <div class="benefits-container">
+            <h2 class="benefits-title">МЫ ДЕЛАЕМ ВОДУ ЧИСТОЙ</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <img src="img/nds.png" alt="НДС" class="benefit-img">
+                    </div>
+                    <div class="benefit-text">Любой способ оплаты (НДС)</div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <img src="img/voda.png" alt="Вода" class="benefit-img">
+                    </div>
+                    <div class="benefit-text">Полный цикл услуг по водоочистке</div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <img src="img/shield.png" alt="Гарантия" class="benefit-img">
+                    </div>
+                    <div class="benefit-text">Гарантия от 1 до 3 лет</div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <img src="img/chat.png" alt="Поддержка" class="benefit-img">
+                    </div>
+                    <div class="benefit-text">Клиентская поддержка 7/365</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Вкус, техника и репутация — всё начинается с воды</h1>
+                <p class="hero-description">Фильтры для HoReCa: защита кофемашин, льдогенераторов и пароконвектоматов. Чистая вода — чистый вкус.</p>
+                <div class="hero-buttons">
+                    <a href="#contact-form" class="btn btn-primary">Подобрать фильтр для заведения</a>
+                    <a href="#contact-form" class="btn btn-secondary">Получить консультацию менеджера</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-grid">
+                    <div class="hero-image-item">
+                        <img src="img/6847131813.jpg" alt="">
+                    </div>
+                    <div class="hero-image-item">
+                        <img src="img/i (1).webp" alt="">
+                    </div>
+                    <div class="hero-image-item">
+                        <img src="img/i (2).webp" alt="">
+                    </div>
+                    <div class="hero-image-item">
+                        <img src="img/i.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок проблем -->
+    <section class="problems">
+        <div class="problems-container">
+            <h2 class="problems-title">Что происходит, если в заведении нет фильтра?</h2>
+            
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 12h8"/>
+                            <path d="M12 8v8"/>
+                        </svg>
+                    </div>
+                    <h3 class="problem-title">Накипь убивает кофемашину</h3>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M9 9h6v6H9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="problem-title">Мутный лёд, поломка генератора</h3>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l8 8-8 8-8-8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="problem-title">Белый налёт на бокалах</h3>
+                </div>
+
+
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                            <line x1="12" y1="9" x2="12" y2="13"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                </div>
+                    <h3 class="problem-title">Риск штрафов от Роспотребнадзора</h3>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="15" y1="9" x2="9" y2="15"/>
+                            <line x1="9" y1="9" x2="15" y2="15"/>
+                        </svg>
+                    </div>
+                    <h3 class="problem-title">Простои и минус в кассе</h3>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 2a10 10 0 0 1 0 20"/>
+                        </svg>
+                    </div>
+                    <h3 class="problem-title">Разный вкус продукции по точкам</h3>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+                            <path d="M21 3v5h-5"/>
+                            <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+                            <path d="M3 21v-5h5"/>
+                        </svg>
+                    </div>
+                    <h3 class="problem-title">Снижение лояльности гостей</h3>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h3 class="cta-title">Решите проблемы с водой прямо сейчас!</h3>
+                    <p class="cta-description">Получите профессиональную консультацию и подбор фильтра</p>
+                    <a href="#contact-form" class="btn btn-primary cta-button">Получить консультацию</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок детальных проблем -->
+    <section class="problems-detailed">
+        <div class="problems-detailed-container">
+            <h2 class="problems-detailed-title">8 проблемы, которые решает профессиональный фильтр</h2>
+            
+            <div class="problems-accordion">
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-1" class="accordion-checkbox">
+                    <label for="accordion-1" class="accordion-header">
+                        <span class="accordion-number">01</span>
+                        <h3 class="accordion-title">Накипь в кофемашине</h3>
+                        <span class="accordion-toggle">+</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p><strong>Проблема:</strong> Жесткая вода образует накипь на нагревательных элементах кофемашины.</p>
+                        <p><strong>Последствия:</strong> Перегрев, выход из строя тэнов и клапанов, ремонт от 50 000 руб.</p>
+                        <p><strong>Решение:</strong> Фильтр умягчает воду, защищает оборудование и сохраняет идеальный вкус кофе.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-2" class="accordion-checkbox">
+                    <label for="accordion-2" class="accordion-header">
+                        <span class="accordion-number">02</span>
+                        <h3 class="accordion-title">Плохой вкус напитков</h3>
+                        <span class="accordion-toggle">+</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p><strong>Проблема:</strong> Хлор и избыток минералов дают горечь и "плоский" вкус кофе.</p>
+                        <p><strong>Последствия:</strong> Жалобы гостей, снижение продаж, потеря репутации.</p>
+                        <p><strong>Решение:</strong> Фильтр убирает хлор и балансирует минералы для стабильного вкуса.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-3" class="accordion-checkbox">
+                    <label for="accordion-3" class="accordion-header">
+                        <span class="accordion-number">03</span>
+                        <h3 class="accordion-title">Поломка льдогенератора</h3>
+                        <span class="accordion-toggle">+</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p><strong>Проблема:</strong> Известковый налёт забивает датчики и форсунки льдогенератора.</p>
+                        <p><strong>Последствия:</strong> Мутный лёд, простои оборудования, потеря выручки в жару.</p>
+                        <p><strong>Решение:</strong> Фильтр обеспечивает кристально чистый лёд и стабильную работу.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-4" class="accordion-checkbox">
+                    <label for="accordion-4" class="accordion-header">
+                        <span class="accordion-number">04</span>
+                        <h3 class="accordion-title">Белый налёт на посуде</h3>
+                        <span class="accordion-toggle">+</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p><strong>Проблема:</strong> Жесткая вода оставляет белые пятна на бокалах и тарелках.</p>
+                        <p><strong>Последствия:</strong> Неопрятный вид, дополнительная полировка, жалобы гостей.</p>
+                        <p><strong>Решение:</strong> Мягкая вода после фильтра не оставляет разводов и пятен.</p>
+                    </div>
+                </div>
+                
+                
+                
+                
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-8" class="accordion-checkbox">
+                    <label for="accordion-8" class="accordion-header">
+                        <span class="accordion-number">02</span>
+                        <h3 class="accordion-title">Риск штрафов от Роспотребнадзора</h3>
+                        <span class="accordion-toggle">+</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p><strong>Проблема:</strong> Нарушение санитарных норм по качеству воды в заведении.</p>
+                        <p><strong>Последствия:</strong> Штрафы до 1 млн руб., временное закрытие заведения.</p>
+                        <p><strong>Решение:</strong> Фильтр гарантирует соответствие всем санитарным требованиям.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-9" class="accordion-checkbox">
+                    <label for="accordion-9" class="accordion-header">
+                        <span class="accordion-number">03</span>
+                        <h3 class="accordion-title">Простои оборудования</h3>
+                        <span class="accordion-toggle">+</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p><strong>Проблема:</strong> Внезапные поломки техники из-за загрязненной воды.</p>
+                        <p><strong>Последствия:</strong> Остановка работы, потеря клиентов, упущенная прибыль.</p>
+                        <p><strong>Решение:</strong> Профилактика поломок через качественную водоподготовку.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-10" class="accordion-checkbox">
+                    <label for="accordion-10" class="accordion-header">
+                        <span class="accordion-number">04</span>
+                        <h3 class="accordion-title">Разный вкус по точкам</h3>
+                        <span class="accordion-toggle">+</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p><strong>Проблема:</strong> Качество воды отличается в разных районах города.</p>
+                        <p><strong>Последствия:</strong> Несоответствие стандартам сети, жалобы франчайзи.</p>
+                        <p><strong>Решение:</strong> Единые фильтры обеспечивают одинаковый вкус везде.</p>
+                    </div>
+                </div>
+                
+                
+                <div class="accordion-item">
+                    <input type="checkbox" id="accordion-12" class="accordion-checkbox">
+                    <label for="accordion-12" class="accordion-header">
+                        <span class="accordion-number">08</span>
+                        <h3 class="accordion-title">Снижение лояльности гостей</h3>
+                        <span class="accordion-toggle">+</span>
+                    </label>
+                    <div class="accordion-content">
+                        <p><strong>Проблема:</strong> Плохой вкус напитков и неопрятная посуда отталкивают клиентов.</p>
+                        <p><strong>Последствия:</strong> Негативные отзывы, снижение повторных посещений.</p>
+                        <p><strong>Решение:</strong> Качественная вода повышает удовлетворенность гостей.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h3 class="cta-title">Хотите узнать больше о решении проблем?</h3>
+                    <p class="cta-description">Получите детальную консультацию по каждой проблеме</p>
+                    <a href="#contact-form" class="btn btn-primary cta-button">Задать вопрос</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок решения - коммерческий осмос -->
+    <section class="solution">
+        <div class="solution-container">
+            <div class="solution-content">
+                <div class="solution-text">
+                    <h2 class="solution-title">Коммерческий осмос — один фильтр для всего оборудования</h2>
+                    <p class="solution-subtitle">Специально для кафе, баров и ресторанов:</p>
+                    <ul class="solution-list">
+                        <li>Убирает соли жёсткости, хлор, железо, бактерии</li>
+                        <li>Работает с кофемашинами, льдогенераторами, посудомойками</li>
+                        <li>Защищает технику и стандартизирует вкус</li>
+                        <li>Даёт стабильную воду 24/7 — даже в сезон</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Смотреть модели →</a>
+                </div>
+                <div class="solution-image">
+                    <div class="filter-image">
+                        <img src="img/осмос.webp" alt="Коммерческий фильтр">
+                        <div class="filter-badge">До 200 литров/ч</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h3 class="cta-title">Готовы решить проблему с водой?</h3>
+                    <p class="cta-description">Подберем идеальное решение для вашего заведения</p>
+                    <a href="#contact-form" class="btn btn-primary cta-button">Подобрать фильтр</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Схема работы фильтра -->
+    <section class="filter-scheme">
+        <div class="filter-scheme-container">
+            <h2 class="filter-scheme-title">Как мы работаем с вами</h2>
+            
+            <div class="scheme-flow">
+                <div class="scheme-step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3v18h18"/>
+                            <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Анализ</h3>
+                    <p class="step-description">Изучаем качество воды и особенности оборудования</p>
+                </div>
+                
+                <div class="scheme-arrow">→</div>
+                
+                <div class="scheme-step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Осмотр</h3>
+                    <p class="step-description">Выезжаем на объект для детального изучения</p>
+                </div>
+                
+                <div class="scheme-arrow">→</div>
+                
+                <div class="scheme-step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
+                            <path d="M17.5 6.5L13 10l-4.5-3.5"/>
+                            <path d="M6.5 17.5L10 14l3.5 3.5"/>
+                            <path d="M17.5 17.5L14 14l3.5-3.5"/>
+                            <path d="M6.5 6.5L10 10l-3.5 3.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Подбор</h3>
+                    <p class="step-description">Рекомендуем оптимальное решение под ваши задачи</p>
+                </div>
+                
+                <div class="scheme-arrow">→</div>
+                
+                <div class="scheme-step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                            <rect x="7" y="7" width="10" height="10" rx="1" ry="1"/>
+                            <path d="M7 7v10"/>
+                            <path d="M17 7v10"/>
+                            <path d="M7 7h10"/>
+                            <path d="M7 17h10"/>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Накопительный бак</h3>
+                    <p class="step-description">Хранит очищенную воду под давлением</p>
+                </div>
+                
+                <div class="scheme-arrow">→</div>
+                
+                <div class="scheme-step final-step">
+                    <div class="step-number">5</div>
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Подача к оборудованию</h3>
+                    <div class="equipment-list">
+                        <div class="equipment-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                                <line x1="6" y1="1" x2="6" y2="4"/>
+                                <line x1="10" y1="1" x2="10" y2="4"/>
+                                <line x1="14" y1="1" x2="14" y2="4"/>
+                            </svg>
+                            Кофемашина
+                        </div>
+                        <div class="equipment-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                                <line x1="12" y1="22.08" x2="12" y2="12"/>
+                            </svg>
+                            Льдогенератор
+                        </div>
+                        <div class="equipment-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                                <line x1="3" y1="6" x2="21" y2="6"/>
+                                <path d="M16 10a4 4 0 0 1-8 0"/>
+                            </svg>
+                            Посудомойка
+                        </div>
+                        <div class="equipment-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            Чайник
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h3 class="cta-title">Хотите узнать, как мы работаем?</h3>
+                    <p class="cta-description">Получите персональную консультацию и план действий</p>
+                    <a href="#contact-form" class="btn btn-primary cta-button">Получить консультацию</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Реальные кейсы -->
+    <section class="cases">
+        <div class="cases-container">
+            <h2 class="cases-title">Результаты наших клиентов</h2>
+            
+            <div class="cases-grid">
+                <div class="case-card">
+                    <div class="case-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                            <line x1="6" y1="1" x2="6" y2="4"/>
+                            <line x1="10" y1="1" x2="10" y2="4"/>
+                            <line x1="14" y1="1" x2="14" y2="4"/>
+                        </svg>
+                    </div>
+                    <div class="case-image">
+                        <img src="img/i (1).webp" alt="Кофейня в Ростове">
+                    </div>
+                    <div class="case-content">
+                        <h3 class="case-title">Кофейня в Ростове</h3>
+                        <div class="case-result">
+                            <div class="result-before">4 ремонта в год</div>
+                            <div class="result-arrow">→</div>
+                            <div class="result-after">теперь 2 года без поломок</div>
+                        </div>
+                        <p class="case-description">Отзывы клиентов улучшились</p>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27,6.96 12,12.01 20.73,6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <div class="case-image">
+                        <img src="img/bar.jpg" alt="Бар в Краснодаре">
+                    </div>
+                    <div class="case-content">
+                        <h3 class="case-title">Бар в Краснодаре</h3>
+                        <div class="case-result">
+                            <div class="result-before">Мутный лёд</div>
+                            <div class="result-arrow">→</div>
+                            <div class="result-after">прозрачный и крепкий</div>
+                        </div>
+                        <p class="case-description">Генератор работает без сбоев</p>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                            <line x1="3" y1="6" x2="21" y2="6"/>
+                            <path d="M16 10a4 4 0 0 1-8 0"/>
+                        </svg>
+                    </div>
+                    <div class="case-image">
+                        <img src="img/пекарня).webp" alt="Пекарня">
+                    </div>
+                    <div class="case-content">
+                        <h3 class="case-title">Пекарня</h3>
+                        <div class="case-result">
+                            <div class="result-before">Налёт на посуде</div>
+                            <div class="result-arrow">→</div>
+                            <div class="result-after">блеск без усилий</div>
+                        </div>
+                        <p class="case-description">Снижение затрат на химию на 25%</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h3 class="cta-title">Хотите такие же результаты?</h3>
+                    <p class="cta-description">Станьте следующим успешным клиентом</p>
+                    <a href="#contact-form" class="btn btn-primary cta-button">Получить результат</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Почему выбирают ФильтроМир -->
+    <section class="why-choose">
+        <div class="why-choose-container">
+            <h2 class="why-choose-title">Мы знаем, как фильтровать воду для бизнеса</h2>
+            
+            <div class="advantages-grid">
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                            <path d="M4 22h16"/>
+                            <path d="M10 14.66V17c0 .55-.47 1-1.05 1H7.05C6.47 18 6 17.55 6 17v-2.34"/>
+                            <path d="M14 14.66V17c0 .55.47 1 1.05 1h1.9c.58 0 1.05-.45 1.05-1v-2.34"/>
+                            <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"/>
+                        </svg>
+                    </div>
+                    <div class="advantage-text">
+                        <h3>10+ лет с HoReCa на юге</h3>
+                        <p>Опыт работы с ресторанами, кафе и барами</p>
+                    </div>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 1v6m0 6v6m11-7h-6m-6 0H1"/>
+                            <path d="M17.5 6.5L13 10l-4.5-3.5"/>
+                            <path d="M6.5 17.5L10 14l3.5 3.5"/>
+                            <path d="M17.5 17.5L14 14l3.5-3.5"/>
+                            <path d="M6.5 6.5L10 10l-3.5 3.5"/>
+                        </svg>
+                    </div>
+                    <div class="advantage-text">
+                        <h3>Подбор по производительности</h3>
+                        <p>Рассчитаем нужную мощность под ваше заведение</p>
+                    </div>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <div class="advantage-text">
+                        <h3>Выезд инженера на точку</h3>
+                        <p>Бесплатный замер и консультация на месте</p>
+                    </div>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <div class="advantage-text">
+                        <h3>Монтаж и пусконаладка</h3>
+                        <p>Установим и настроим систему под ключ</p>
+                    </div>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+                            <path d="M21 3v5h-5"/>
+                            <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+                            <path d="M3 21v-5h5"/>
+                        </svg>
+                    </div>
+                    <div class="advantage-text">
+                        <h3>Поддержка и замена картриджей</h3>
+                        <p>Регулярное обслуживание и своевременная замена</p>
+                    </div>
+                </div>
+
+
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3v18h18"/>
+                            <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                        </svg>
+                    </div>
+                    <div class="advantage-text">
+                        <h3>Более 100 заведений с нашими системами</h3>
+                        <p>Проверенное качество и надежность</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h3 class="cta-title">Готовы работать с профессионалами?</h3>
+                    <p class="cta-description">Получите все преимущества работы с нами</p>
+                    <a href="#contact-form" class="btn btn-primary cta-button">Начать сотрудничество</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="faq-container">
+            <h2 class="faq-title">Часто задаваемые вопросы</h2>
+            
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-1" class="faq-checkbox">
+                    <label for="faq-1" class="faq-header">
+                        <h3 class="faq-question">Какой фильтр мне нужен — 20 или 50 л/ч?</h3>
+                        <span class="faq-toggle">+</span>
+                    </label>
+                    <div class="faq-content">
+                        <p>Производительность зависит от количества оборудования и интенсивности работы. Для небольшой кофейни достаточно 20 л/ч, для ресторана с несколькими кофемашинами и льдогенератором — 50 л/ч. Наш инженер поможет точно рассчитать нужную производительность.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-2" class="faq-checkbox">
+                    <label for="faq-2" class="faq-header">
+                        <h3 class="faq-question">Можно ли подключить сразу к 3 приборам?</h3>
+                        <span class="faq-toggle">+</span>
+                    </label>
+                    <div class="faq-content">
+                        <p>Да, один фильтр может обслуживать несколько приборов одновременно. Мы установим распределительную систему с отдельными кранами для каждого устройства. Главное — правильно рассчитать производительность системы.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-3" class="faq-checkbox">
+                    <label for="faq-3" class="faq-header">
+                        <h3 class="faq-question">Что делать, если уже стоит бытовой фильтр?</h3>
+                        <span class="faq-toggle">+</span>
+                    </label>
+                    <div class="faq-content">
+                        <p>Бытовые фильтры не рассчитаны на коммерческие нагрузки и быстро выходят из строя. Мы демонтируем старую систему и установим профессиональное оборудование, которое выдержит интенсивную работу заведения.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-4" class="faq-checkbox">
+                    <label for="faq-4" class="faq-header">
+                        <h3 class="faq-question">Как часто менять картриджи?</h3>
+                        <span class="faq-toggle">+</span>
+                    </label>
+                    <div class="faq-content">
+                        <p>Периодичность замены зависит от качества исходной воды и интенсивности использования. Обычно: предфильтры — каждые 3-6 месяцев, мембрана обратного осмоса — раз в 1-2 года. Мы ведем график обслуживания и напоминаем о замене.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <input type="checkbox" id="faq-5" class="faq-checkbox">
+                    <label for="faq-5" class="faq-header">
+                        <h3 class="faq-question">Вы работаете по договору?</h3>
+                        <span class="faq-toggle">+</span>
+                    </label>
+                    <div class="faq-content">
+                        <p>Да, мы заключаем официальный договор на поставку, монтаж и обслуживание оборудования. Предоставляем гарантию на систему и все комплектующие. Работаем с НДС, предоставляем полный пакет документов.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <div class="cta-content">
+                    <h3 class="cta-title">Остались вопросы?</h3>
+                    <p class="cta-description">Получите ответы на все вопросы от наших экспертов</p>
+                    <a href="#contact-form" class="btn btn-primary cta-button">Задать вопрос</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма заявки -->
+    <section class="contact-form" id="contact-form">
+        <div class="contact-form-container">
+            <div class="form-content">
+                <div class="form-text">
+                    <h2 class="form-title">Нужна очистка воды?</h2>
+                    <p class="form-subtitle">Оставьте заявку — подберём фильтр и обеспечим чистую воду!</p>
+                </div>
+                
+                <form class="application-form">
+                    <div class="form-group">
+                        <label for="name">*Имя</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">*Телефон</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="comment">Комментарий (необязательно)</label>
+                        <textarea id="comment" name="comment" rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="captcha">*Контрольный вопрос: 7 + 3 = ?</label>
+                        <input type="text" id="captcha" name="captcha" required>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="agreement" required>
+                            <span class="checkmark"></span>
+                            Я принимаю условия передачи информации.
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary form-submit">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="ФильтроМир" class="footer-logo-img">
+                    </div>
+                    <div class="footer-copyright">
+                        <p>Все права защищены (с)</p>
+                        <p>Основано в 2015</p>
+                    </div>
+                    <div class="footer-links-left">
+                        <a href="#">Возврат товара</a>
+                        <a href="#">О компании</a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon vk-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1.01-1.49-.864-1.744-.864-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.424 0 .593.203.78.677.864 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.254-1.406 2.151-3.574 2.151-3.574.119-.254.322-.491.763-.491h1.744c.525 0 .644.271.525.643-.22 1.017-2.354 3.031-2.354 3.031-.186.186-.254.271-.118.491.102.186.644 1.254.967 2.118.14.39.254.677.525.677z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon telegram-icon">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-middle-left">
+                    <ul class="footer-nav-links">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Акционные предложения</a></li>
+                        <li><a href="#">Полезная информация</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Наши работы</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Политика обработки персональных данных</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-middle-right">
+                    <ul class="footer-product-links">
+                        <li><a href="#">Обратный осмос</a></li>
+                        <li><a href="#">Проточные фильтры</a></li>
+                        <li><a href="#">Фильтры на весь дом</a></li>
+                        <li><a href="#">Магистральные фильтры</a></li>
+                        <li><a href="#">Сменные фильтры</a></li>
+                        <li><a href="#">Комплектующие к фильтрам</a></li>
+                        <li><a href="#">Услуги</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-right">
+                    <div class="footer-contact">
+                        <p class="footer-email">info@filtromir.ru</p>
+                        <div class="footer-phones">
+                            <div class="phone-item">
+                                <span class="phone-icon">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </span>
+                                <a href="tel:+79381001848">+7 (938) 100-18-48</a>
+                            </div>
+                            <div class="phone-item">
+                                <span class="phone-icon">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </span>
+                                <a href="tel:+79676642300">+7 (967) 664-23-00</a>
+                            </div>
+                        </div>
+                        <div class="footer-stores">
+                            <div class="store-title">
+                                <span class="location-icon">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </span>
+                                Наши магазины:
+                            </div>
+                            <p>Ростов-на-Дону, ул. Вавилова, 54</p>
+                            <p>Краснодар, ул. Российская, 372</p>
+                        </div>
+                        <button class="vacancy-btn">Вакансии</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-slogan">
+                <p>МЫ ДЕЛАЕМ ВОДУ ЧИСТОЙ</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

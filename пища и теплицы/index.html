@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Промышленные фильтры для воды — чистота, урожай и стабильность вашего производства</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header__bottom">
+        <div class="wrapper">
+            <span class="logo"><img width="165" height="59" src="img/logo.png" title="ФильтроМир - фильтры для воды" alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"></span>
+            
+            <div class="header__bottom_item header__bottom_phone">
+                <div class="header__bottom_item-text">
+                    <a href="tel:+79381001848">+7 (938) 100-18-48</a>
+                    <div>
+                        <a class="open_modal" style="display: inline; font-size: 12px">Ваш город: </a><a class="open_modal" href="#city__click" style="display: inline; border-bottom: 1px dashed black; font-size: 12px;">Ростов</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="header__bottom_wrap">
+                <form action="/products" class="block__search" target="_top">
+                    <input type="text" id="title-search-input" name="keyword" value="" placeholder="Поиск по товарам..." autocomplete="off">
+                    <button type="submit">
+                        <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                            <circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="m21 21-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+            
+            <iframe src="https://yandex.ru/sprav/widget/rating-badge/23080508950?type=rating" width="150" height="50" frameborder="0" class="ya-rate"></iframe>
+            
+            <div class="header__bottom_item header__bottom_comparison">
+                <a href="https://filtromir.ru/compare" class="btn btn__icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#0079c0">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                    </svg>
+                </a>
+                <div class="header__bottom_item-text">
+                    <a href="https://filtromir.ru/compare">Сравнение</a>
+                </div>
+            </div>
+            
+            <div class="header__bottom_item header__bottom_basket" id="cart_informer">
+                <a href="cart" class="btn btn__icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#0079c0">
+                        <path d="M7 4V2c0-.55-.45-1-1-1s-1 .45-1 1v2c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2V2c0-.55-.45-1-1-1s-1 .45-1 1v2H7zm-2 2h10v11H5V6zm2 2v7h2V8H7zm4 0v7h2V8h-2zm4 0v7h2V8h-2z"/>
+                    </svg>
+                    <div class="quantity">0</div>
+                </a>
+                <div class="header__bottom_item-text">
+                    <a href="cart">В корзине</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="header__menu">
+        <div class="wrapper">
+            <nav class="header__menu-nav">
+                <a href="#" class="header__menu-link">ОБРАТНЫЙ ОСМОС</a>
+                <span class="menu-separator">|</span>
+                <a href="#" class="header__menu-link">ПРОТОЧНЫЕ ФИЛЬТРЫ</a>
+                <span class="menu-separator">|</span>
+                <a href="#" class="header__menu-link">ФИЛЬТРЫ НА ВЕСЬ ДОМ</a>
+                <span class="menu-separator">|</span>
+                <a href="#" class="header__menu-link">МАГИСТРАЛЬНЫЕ ФИЛЬТРЫ</a>
+                <span class="menu-separator">|</span>
+                <a href="#" class="header__menu-link">СМЕННЫЕ ФИЛЬТРЫ</a>
+                <span class="menu-separator">|</span>
+                <a href="#" class="header__menu-link">КОМПЛЕКТУЮЩИЕ К ФИЛЬТРАМ</a>
+                <span class="menu-separator">|</span>
+                <a href="#" class="header__menu-link">УСЛУГИ</a>
+            </nav>
+        </div>
+    </div>
+    
+    <section class="benefits">
+        <div class="benefits-container">
+            <h2 class="benefits-title">МЫ ДЕЛАЕМ ВОДУ ЧИСТОЙ</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <img src="img/nds.png" alt="НДС" class="benefit-img">
+                    </div>
+                    <div class="benefit-text">Любой способ оплаты (НДС)</div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <img src="img/voda.png" alt="Вода" class="benefit-img">
+                    </div>
+                    <div class="benefit-text">Полный цикл услуг по водоочистке</div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <img src="img/shield.png" alt="Гарантия" class="benefit-img">
+                    </div>
+                    <div class="benefit-text">Гарантия от 1 до 3 лет</div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <img src="img/chat.png" alt="Поддержка" class="benefit-img">
+                    </div>
+                    <div class="benefit-text">Клиентская поддержка 7/365</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Очистка воды для теплиц и пищевых производств — чтобы продукция не зависела от качества воды</h1>
+                <p class="hero-description">
+                    Удалим железо, жёсткость, соли и микробы. Защитим линии, урожай и рецептуру. Фильтрация под ваш источник и задачи.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contactForm" class="btn btn-primary">Получить подбор системы</a>
+                    <a href="#contactForm" class="btn btn-secondary">Бесплатный анализ воды</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-collage">
+                    <div class="collage-item collage-main">
+                        <img src="img/i.webp" alt="Теплица с системой полива" class="collage-img">
+                    </div>
+                    <div class="collage-item collage-secondary">
+                        <img src="img/i (1).webp" alt="Пищевое производство" class="collage-img">
+                    </div>
+                    <div class="collage-item collage-filter">
+                        <img src="img/i (2).webp" alt="Промышленная система фильтрации" class="collage-img">
+                    </div>
+                    <div class="collage-item collage-water">
+                        <img src="img/i (3).webp" alt="Чистая вода" class="collage-img">
+                    </div>
+                    <div class="collage-item collage-engineer">
+                        <img src="img/i (4).webp" alt="Инженер проверяет установку" class="collage-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="problems">
+        <div class="problems-container">
+            <h2 class="problems-title">Вода без фильтра — скрытый убыток каждый день</h2>
+            
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                    </div>
+                    <p class="problem-text">Накипь и перегрев котлов — чистка теплообменников каждые 2 месяца</p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                        </svg>
+                    </div>
+                    <p class="problem-text">Железо в воде — ржавчина в капельном поливе, брак продукции</p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <p class="problem-text">Высокая минерализация — обжоги растений, выпадение осадка</p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M15 13V5c0-1.66-1.34-3-3-3S9 3.34 9 5v8c-1.21.91-2 2.37-2 4 0 2.76 2.24 5 5 5s5-2.24 5-5c0-1.63-.79-3.09-2-4zm-4-8c0-.55.45-1 1-1s1 .45 1 1h-1v1h1v2h-1v1h1v2h-2V5z"/>
+                        </svg>
+                    </div>
+                    <p class="problem-text">Щёлочная вода — нарушение рецептур, забитые трубки</p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <p class="problem-text">Песок и глина — износ клапанов и поломка насосов</p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <p class="problem-text">Бактерии и плесень — гнили в теплице, санитарные риски в производстве</p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <p class="problem-text">Вода влияет на вкус — брак партии, возвраты</p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <p class="problem-text">Проблемы с напором — остановка линий, срыв сроков</p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+                        </svg>
+                    </div>
+                    <p class="problem-text">Переход на бутилированную воду — ежедневные издержки</p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+                        </svg>
+                    </div>
+                    <p class="problem-text">Риск штрафов — сточные воды выходят за пределы ПДК</p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+                        </svg>
+                    </div>
+                    <p class="problem-text">Ремонт за ваш счёт — до 1500 рублей за каждый бойлер</p>
+                </div>
+
+                <div class="problem-card">
+                    <div class="problem-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+                        </svg>
+                    </div>
+                    <p class="problem-text">Потери урожая и дохода — нерентабельные посадки и простои</p>
+                </div>
+            </div>
+            
+            <div class="problems-cta">
+                <a href="#contactForm" class="btn btn-primary">Решить проблемы с водой</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="solutions">
+        <div class="solutions-container">
+            <h2 class="solutions-title">Фильтрация под вашу задачу: от капли до куба</h2>
+            
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="solution-title">Для теплиц и агрохозяйств</h3>
+                    <div class="solution-description">
+                        <p>Удаление железа, накипи, солей</p>
+                        <p>Увеличение урожайности, защита капельного полива</p>
+                    </div>
+                    <div class="solution-products">
+                        <div class="product-item">Фильтры обезжелезователи</div>
+                        <div class="product-item">Фильтры умягчители</div>
+                        <div class="product-item">Промышленный осмос</div>
+                    </div>
+                </div>
+
+                <div class="solution-card">
+                    <div class="solution-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="solution-title">Для пищевых производств</h3>
+                    <div class="solution-description">
+                        <p>Устойчивый вкус, защита оборудования, соблюдение норм</p>
+                    </div>
+                    <div class="solution-products">
+                        <div class="product-item">Промышленный осмос</div>
+                        <div class="product-item">Системы умягчения</div>
+                        <div class="product-item">Фильтры от механических примесей</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="solutions-cta">
+                <a href="#contactForm" class="btn btn-primary">Подобрать решение</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="filtration-scheme">
+        <div class="scheme-container">
+            <h2 class="scheme-title">Как работает промышленная система очистки</h2>
+            
+            <div class="scheme-flow">
+                <div class="scheme-step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Анализ</h3>
+                    <p class="step-description">Исследование качества воды</p>
+                </div>
+                
+                <div class="scheme-arrow">→</div>
+                
+                <div class="scheme-step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Подбор</h3>
+                    <p class="step-description">Выбор оптимальной системы</p>
+                </div>
+                
+                <div class="scheme-arrow">→</div>
+                
+                <div class="scheme-step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Установка</h3>
+                    <p class="step-description">Монтаж и настройка</p>
+                </div>
+                
+                <div class="scheme-arrow">→</div>
+                
+                <div class="scheme-step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Очистка</h3>
+                    <p class="step-description">Фильтрация воды</p>
+                </div>
+                
+                <div class="scheme-arrow">→</div>
+                
+                <div class="scheme-step">
+                    <div class="step-number">5</div>
+                    <div class="step-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="step-title">Готовая вода</h3>
+                    <p class="step-description">Чистая вода для производства</p>
+                </div>
+            </div>
+            
+            <div class="scheme-cta">
+                <a href="#contactForm" class="btn btn-primary">Запустить систему</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cases">
+        <div class="cases-container">
+            <h2 class="cases-title">Как мы спасли урожай и оборудование нашим клиентам</h2>
+            
+            <div class="cases-grid">
+                <div class="case-card">
+                    <div class="case-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="case-title">Теплица на 3 га, Ростовская обл.</h3>
+                    <p class="case-description">
+                        Железо забивало капельный полив. После установки обезжелезователя и осмоса — экономия 18% на удобрениях и увеличение урожая.
+                    </p>
+                    <div class="case-result">
+                        <span class="result-label">Результат:</span>
+                        <span class="result-value">+18% экономия на удобрениях</span>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="case-title">Кондитерский цех, Краснодар</h3>
+                    <p class="case-description">
+                        Вода меняла вкус крема. После внедрения осмоса — стабильный вкус, ноль возвратов и рост лояльности клиентов.
+                    </p>
+                    <div class="case-result">
+                        <span class="result-label">Результат:</span>
+                        <span class="result-value">0 возвратов продукции</span>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="case-title">Рыбное производство, Крым</h3>
+                    <p class="case-description">
+                        Солёная скважина. Поставили промышленный осмос с буферным баком. Качество воды стало стабильным, убрали проблему запаха.
+                    </p>
+                    <div class="case-result">
+                        <span class="result-label">Результат:</span>
+                        <span class="result-value">Стабильное качество воды</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cases-cta">
+                <a href="#contactForm" class="btn btn-primary">Получить такой же результат</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="advantages-container">
+            <h2 class="advantages-title">Надёжный партнёр по воде для бизнеса</h2>
+            
+            <div class="advantages-grid">
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <p class="advantage-text">10+ лет опыта с промышленными клиентами</p>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                        </svg>
+                    </div>
+                    <p class="advantage-text">1000+ инженерных систем запущено</p>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <p class="advantage-text">Бесплатный выезд инженера и тест воды</p>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                        </svg>
+                    </div>
+                    <p class="advantage-text">Подбор по анализу и индивидуальные КП</p>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+                        </svg>
+                    </div>
+                    <p class="advantage-text">Под ключ: проектирование, монтаж, сервис</p>
+                </div>
+
+
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="#0079c0">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                    </div>
+                    <p class="advantage-text">Работаем 7 дней в неделю</p>
+                </div>
+            </div>
+            
+            <div class="advantages-cta">
+                <a href="#contactForm" class="btn btn-primary">Стать нашим партнёром</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="faq-container">
+            <h2 class="faq-title">Часто задаваемые вопросы</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Сколько стоит подбор системы под теплицу 5 га?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Стоимость системы зависит от качества исходной воды и требуемой производительности. Для теплицы 5 га обычно требуется система производительностью 10-15 м³/час. Цена комплексной системы начинается от 450 000 рублей. Точный расчёт делаем после анализа воды и технического задания.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Какие фильтры справятся с жёсткой артезианской водой?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Для жёсткой артезианской воды рекомендуем комплексную систему: механическая очистка + обезжелезивание + умягчение ионообменными смолами. При очень высокой жёсткости (свыше 10 мг-экв/л) эффективен обратный осмос. Подбираем оптимальную схему после анализа воды.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Что делать, если на производстве уже стоит частичная фильтрация?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Проводим аудит существующей системы и анализ воды на входе и выходе. Определяем, какие ступени очистки нужно добавить или модернизировать. Часто можно интегрировать новое оборудование в существующую схему, что экономит бюджет.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Как получить анализ воды?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Предлагаем два варианта: экспресс-анализ на месте нашим инженером (бесплатно) или полный лабораторный анализ в аккредитованной лаборатории. Для промышленных систем рекомендуем расширенный анализ по 20+ показателям. Выезд инженера и забор проб — бесплатно.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <a href="#contactForm" class="btn btn-primary">Получить ответы на вопросы</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2 class="cta-title">Получите подбор системы под ваш объект</h2>
+                <p class="cta-description">
+                    Оставьте заявку — инженер приедет на замер, соберёт воду на анализ и предложит оптимальное решение под ваш бюджет и задачи.
+                </p>
+            </div>
+            
+            <div class="cta-form-wrapper">
+                <form class="cta-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="*Имя" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="*Телефон" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="comment" name="comment" placeholder="Комментарий (необязательно)">
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="captcha" name="captcha" placeholder="*Контрольный вопрос: 8 - 4 = ?" required>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="agreement" name="agreement" required>
+                            <span class="checkbox-text">Я принимаю условия передачи информации.</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="cta-submit">Оставить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="img/logo.png" alt="ФильтроМир" class="footer-logo-img">
+                    </div>
+                    <div class="footer-copyright">
+                        <p>Все права защищены (с)</p>
+                        <p>Основано в 2015</p>
+                    </div>
+                    <div class="footer-links-left">
+                        <a href="#">Возврат товара</a>
+                        <a href="#">О компании</a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon vk-icon">B</a>
+                        <a href="#" class="social-icon telegram-icon">✈</a>
+                    </div>
+                </div>
+                
+                <div class="footer-middle-left">
+                    <ul class="footer-nav-links">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Акционные предложения</a></li>
+                        <li><a href="#">Полезная информация</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Наши работы</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Политика обработки персональных данных</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-middle-right">
+                    <ul class="footer-product-links">
+                        <li><a href="#">Обратный осмос</a></li>
+                        <li><a href="#">Проточные фильтры</a></li>
+                        <li><a href="#">Фильтры на весь дом</a></li>
+                        <li><a href="#">Магистральные фильтры</a></li>
+                        <li><a href="#">Сменные фильтры</a></li>
+                        <li><a href="#">Комплектующие к фильтрам</a></li>
+                        <li><a href="#">Услуги</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-right">
+                    <div class="footer-contact">
+                        <p class="footer-email">info@filtromir.ru</p>
+                        <div class="footer-phones">
+                            <div class="phone-item">
+                                <span class="phone-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#0079c0">
+                                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                    </svg>
+                                </span>
+                                <a href="tel:+79381001848">+7 (938) 100-18-48</a>
+                            </div>
+                            <div class="phone-item">
+                                <span class="phone-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#0079c0">
+                                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                    </svg>
+                                </span>
+                                <a href="tel:+79676642300">+7 (967) 664-23-00</a>
+                            </div>
+                        </div>
+                        <div class="footer-stores">
+                            <div class="store-title">
+                                <span class="location-icon">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="#0079c0">
+                                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                    </svg>
+                                </span>
+                                Наши магазины:
+                            </div>
+                            <p>Ростов-на-Дону, ул. Вавилова, 54</p>
+                            <p>Краснодар, ул. Российская, 372</p>
+                        </div>
+                        <button class="vacancy-btn">Вакансии</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-slogan">
+                <p>МЫ ДЕЛАЕМ ВОДУ ЧИСТОЙ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ аккордеон
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    const isActive = item.classList.contains('active');
+                    
+                    // Закрываем все остальные FAQ
+                    faqItems.forEach(otherItem => {
+                        otherItem.classList.remove('active');
+                    });
+                    
+                    // Открываем текущий, если он не был активен
+                    if (!isActive) {
+                        item.classList.add('active');
+                    }
+                });
+            });
+            
+            // Обработка формы
+            const contactForm = document.getElementById('contactForm');
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Получаем данные формы
+                const formData = new FormData(contactForm);
+                const data = Object.fromEntries(formData);
+                
+                // Здесь можно добавить отправку данных на сервер
+                console.log('Данные формы:', data);
+                
+                // Показываем сообщение об успешной отправке
+                const submitBtn = contactForm.querySelector('.cta-submit');
+                const originalText = submitBtn.textContent;
+                
+                submitBtn.textContent = 'Заявка отправлена!';
+                submitBtn.style.background = '#4caf50';
+                submitBtn.disabled = true;
+                
+                // Возвращаем кнопку в исходное состояние через 3 секунды
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.style.background = '#e91e63';
+                    submitBtn.disabled = false;
+                    contactForm.reset();
+                }, 3000);
+            });
+        });
+    </script>
+</body>
+</html>
