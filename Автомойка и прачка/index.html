@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильтры для очистки воды в Ростове-на-Дону и Краснодаре от магазина №1 ФильтроМир</title>
+<link rel="stylesheet" href="../style.css?v=6">
+    <style>
+        /* ДЕСКТОП - Сравнение и Корзина */
+        .flex.compare-and-cart {
+            display: flex !important;
+            gap: 20px !important;
+            align-items: center !important;
+        }
+        
+        .header__bottom_comparison,
+        .header__bottom_basket {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 5px !important;
+            margin-left: 0 !important;
+            text-align: center !important;
+        }
+        
+        .header__bottom_comparison .header__bottom_item-text,
+        .header__bottom_basket .header__bottom_item-text {
+            text-align: center !important;
+            width: 100% !important;
+            margin: 0 !important;
+        }
+        
+        .header__bottom_comparison .header__bottom_item-text a,
+        .header__bottom_basket .header__bottom_item-text a {
+            text-align: center !important;
+            display: block !important;
+            width: 100% !important;
+        }
+        
+        /* Меню - центрирование */
+        .header__menu_nav-listGroup li {
+            text-align: center !important;
+        }
+        
+        .header__menu_nav-listGroup li a {
+            text-align: center !important;
+            display: block !important;
+            width: 100% !important;
+        }
+    </style>
+</head>
+<body>
+     <!-- 🔥 NEW START Top header-menu -->
+       <div class="header-top-menu-wrapper">
+        <div class="header-top-menu flex bold default-container">
+          <nav class="top-menu text">
+            <ul class="top-menu-list flex">
+              <li>
+                <a class="header-menu-link" href="/o-kompanii">О компании</a>
+              </li>
+              <li>
+                <a class="header-menu-link" href="/dostavka">Доставка и оплата</a>
+              </li>
+              <li><a class="header-menu-link" href="/service">Услуги</a></li>
+              <li>
+                <a class="header-menu-link" href="/blog">Хочу стать партнером</a>
+              </li>
+              <li><a class="header-menu-link" href="/contact">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="buttons text flex">
+                      <!-- Unauthorized start -->
+            <a class="header-menu-link" href="https://filtromir.ru/user/login">
+              Вход
+            </a>
+            <a class="header-menu-link" href="https://filtromir.ru/user/register">
+              Регистрация
+            </a>
+            <!-- Unauthorized end -->
+                
+            
+            <a href="/cart" aria-label="Корзина" class="cart header-menu-link">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.00522 0.932114C0.73862 0.932114 0.482938 1.03802 0.294423 1.22654C0.105907 1.41505 0 1.67073 0 1.93734C0 2.20394 0.105907 2.45962 0.294423 2.64813C0.482938 2.83665 0.73862 2.94256 1.00522 2.94256H2.86287C3.09072 2.94256 3.28909 3.09535 3.34806 3.31516L6.77653 16.1713C5.6997 16.4518 4.74634 17.0817 4.06578 17.9621C3.38522 18.8425 3.0159 19.9238 3.01567 21.0365C3.01567 21.5914 3.466 22.0418 4.02089 22.0418H25.1305C25.3971 22.0418 25.6528 21.9359 25.8413 21.7473C26.0299 21.5588 26.1358 21.3031 26.1358 21.0365C26.1358 20.7699 26.0299 20.5143 25.8413 20.3257C25.6528 20.1372 25.3971 20.0313 25.1305 20.0313H5.19767C5.40559 19.4432 5.79077 18.9341 6.30014 18.574C6.80951 18.2139 7.41799 18.0207 8.04177 18.0209H23.0772C23.2655 18.0209 23.45 17.968 23.6098 17.8682C23.7695 17.7685 23.898 17.6258 23.9806 17.4566C25.5108 14.3164 26.836 11.0804 27.9478 7.76896C27.9918 7.63796 28.0082 7.49931 27.9962 7.36167C27.9841 7.22403 27.9438 7.09035 27.8778 6.96898C27.8118 6.8476 27.7214 6.74115 27.6124 6.65626C27.5034 6.57136 27.378 6.50986 27.2442 6.47558C20.1752 4.67308 12.8964 3.82696 5.60244 3.95984L5.29149 2.7978C5.14882 2.26268 4.83339 1.78967 4.3942 1.45228C3.95502 1.11489 3.41669 0.932032 2.86287 0.932114H1.00522ZM3.01567 25.0574C3.01567 24.5242 3.22748 24.0129 3.60451 23.6358C3.98154 23.2588 4.49291 23.047 5.02611 23.047C5.55931 23.047 6.07068 23.2588 6.44771 23.6358C6.82474 24.0129 7.03655 24.5242 7.03655 25.0574C7.03655 25.5906 6.82474 26.102 6.44771 26.479C6.07068 26.8561 5.55931 27.0679 5.02611 27.0679C4.49291 27.0679 3.98154 26.8561 3.60451 26.479C3.22748 26.102 3.01567 25.5906 3.01567 25.0574ZM20.1044 25.0574C20.1044 24.5242 20.3162 24.0129 20.6933 23.6358C21.0703 23.2588 21.5817 23.047 22.1149 23.047C22.6481 23.047 23.1594 23.2588 23.5365 23.6358C23.9135 24.0129 24.1253 24.5242 24.1253 25.0574C24.1253 25.5906 23.9135 26.102 23.5365 26.479C23.1594 26.8561 22.6481 27.0679 22.1149 27.0679C21.5817 27.0679 21.0703 26.8561 20.6933 26.479C20.3162 26.102 20.1044 25.5906 20.1044 25.0574Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <span class="cart-count flex">0</span>
+            </a>
+          </div>
+        </div>
+        <hr class="header-hr" />
+      </div>
+      <!-- 🧯 NEW END Top header-menu -->
+
+    <!-- Header -->
+<header class="header">
+      <div class="header__bottom">
+        <div class="wrapper">
+		
+          <span class="logo"
+            ><img
+              width="165"
+              height="59"
+              src="https://filtromir.ru/design/filtromir2025/img/logo.png"
+              title="ФильтроМир - фильтры для воды"
+              alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+          /></span>
+		
+          
+          <div class="header__bottom_item header__bottom_phone">
+            <div class="header__bottom_item-text">
+				              <a href="tel:+79381001848">+7 (938) 100-18-48</a>
+				              <div>
+                <a class="open_modal" style="display: inline; font-size: 12px"
+                  >Ваш город: </a
+                ><a
+                  class="open_modal"
+                  href="#city__click"
+                  style="
+                    display: inline;
+                    border-bottom: 1px dashed black;
+                    font-size: 12px;
+                  "
+                  >Ростов</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="header__bottom_wrap">
+            <form action="/products" class="block__search" target="_top">
+              <input
+                type="text"
+                id="title-search-input"
+                name="keyword"
+                value=""
+                placeholder="Поиск по товарам..."
+                autocomplete="off"
+              />
+			  <button type="submit">
+                <img
+                  width="18"
+                  height="18"
+                  src="https://filtromir.ru/design/filtromir2025/img/search.png"
+                  class="img-responsive"
+                  title="Поиск по товарам"
+                  alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                />
+              </button>
+            </form>
+          </div>
+          <iframe
+            src="https://yandex.ru/sprav/widget/rating-badge/23080508950?type=rating"
+            width="150"
+            height="50"
+            frameborder="0"
+            class="ya-rate"
+          ></iframe>
+          <div class="flex compare-and-cart">
+            <div class="header__bottom_item header__bottom_comparison">
+              <a href="https://filtromir.ru/compare" class="btn btn__icon"
+                ><img
+                  width="22"
+                  height="15"
+                  src="img/analitics.png"
+                  class="img-responsive"
+                  title="Список сравнения"
+                  alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                />
+              </a>
+              <div class="header__bottom_item-text">
+                <a href="https://filtromir.ru/compare">Сравнение</a>
+              </div>
+            </div>
+            <div
+              class="header__bottom_item header__bottom_basket"
+              id="cart_informer"
+            >
+				<a href="cart" class="btn btn__icon"
+                ><img
+                  width="20"
+                  height="20"
+                  src="img/basket.png"
+                  class="img-responsive"
+                  title="Корзина товаров"
+                  alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                />
+                <div class="quantity">0</div></a
+              >
+              <div class="header__bottom_item-text">
+                <a href="cart">В корзине</a>
+              </div>
+              <div id="cart_popup" style="display: none">
+			  </div>
+
+
+
+				
+				
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 🔧 MODIFIED END Header -->
+
+
+
+<div class="header__menu">
+<div class="wrapper"><div id="mobile_mnu" data-catclass="header__menu_nav">
+ <img width="16" height="12" src="https://filtromir.ru/design/filtromir2025/img/mob_menu-icon.png" class="img-responsive" title="Мобильное меню" alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам">КАТАЛОГ
+</div>
+<nav class="header__menu_nav">
+<ul class="header__menu_nav-listGroup">
+<li><a  href="https://filtromir.ru/catalog/obratnyj-osmos">Обратный осмос</a>
+<ul class="dropdown__menu"><li><a href="https://filtromir.ru/catalog/filtr-obratnogo-osmosa"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312093302.jpg" alt="Фильтр обратного осмоса"> <div class="gth">Фильтр обратного осмоса</div></a></li>
+<li><a href="https://filtromir.ru/catalog/obratnyj-osmos-s-nasosom"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312092742.jpg" alt="Обратный осмос с насосом"> <div class="gth">Обратный осмос с насосом</div></a></li>
+<li><a href="https://filtromir.ru/catalog/promishlenniy-osmos"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312093101.jpg" alt="Промышленный осмос"> <div class="gth">Промышленный осмос</div></a></li>
+<li><a href="https://filtromir.ru/catalog/kommercheskij-osmos"><img width="58" height="58" src="https://filtromir.ru/files/categories/683e06d01156fb5b9007cabafe016b5c.jpg (500×500) - Google Chrome_240414150535.png" alt="Коммерческий осмос"> <div class="gth">Коммерческий осмос</div></a></li>
+</ul></li>
+<li><a  href="https://filtromir.ru/catalog/protochnye-filtry">Проточные фильтры</a>
+<ul class="dropdown__menu"><li><a href="https://filtromir.ru/catalog/filtry-pod-mojku"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312092703.jpg" alt="Фильтры под мойку"> <div class="gth">Фильтры под мойку</div></a></li>
+<li><a href="https://filtromir.ru/catalog/nastolnye-filtry"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312092931.jpg" alt="Настольные фильтры"> <div class="gth">Настольные фильтры</div></a></li>
+<li><a href="https://filtromir.ru/catalog/filtry-nasadki-na-kran"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312092612.jpg" alt="Фильтры насадки на кран"> <div class="gth">Фильтры насадки на кран</div></a></li>
+</ul></li>
+<li><a  href="https://filtromir.ru/catalog/filtry-na-ves-dom">Фильтры на весь дом</a>
+<ul class="dropdown__menu"><li><a href="https://filtromir.ru/catalog/kompleksnaya-ochistka-vody"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312092548.jpg" alt="Комплексная очистка воды"> <div class="gth">Комплексная очистка воды</div></a></li>
+<li><a href="https://filtromir.ru/catalog/filtry-ot-zheleza"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312092548.jpg" alt="Фильтры от железа"> <div class="gth">Фильтры от железа</div></a></li>
+<li><a href="https://filtromir.ru/catalog/ochistka-ot-serovodoroda"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312092548.jpg" alt="Очистка от сероводорода"> <div class="gth">Очистка от сероводорода</div></a></li>
+<li><a href="https://filtromir.ru/catalog/filtry-umyagchiteli"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312092548.jpg" alt="Фильтры умягчители"> <div class="gth">Фильтры умягчители</div></a></li>
+<li><a href="https://filtromir.ru/catalog/komplekty-filtrov-na-ves-dom"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312092548.jpg" alt="Комплекты фильтров на весь дом"> <div class="gth">Комплекты фильтров на весь дом</div></a></li>
+<li><a href="https://filtromir.ru/catalog/ugolnye-kolonny"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312092959.jpg" alt="Угольные колонны"> <div class="gth">Угольные колонны</div></a></li>
+<li><a href="https://filtromir.ru/catalog/purifajery"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312093042.jpg" alt="Пурифайеры"> <div class="gth">Пурифайеры</div></a></li>
+<li><a href="https://filtromir.ru/catalog/ochistiteli-vozduha"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_210820111042.jpg" alt="Очистители воздуха"> <div class="gth">Очистители воздуха</div></a></li>
+<li><a href="https://filtromir.ru/catalog/nakopitelnye-baki-dlya-vody"><img width="58" height="58" src="https://filtromir.ru/files/categories/ecd0c303ae9a239aa2b8f864929d22e3_2020-12-03_01-39-29.jpg" alt="Накопительные баки для воды"> <div class="gth">Накопительные баки для воды</div></a></li>
+</ul></li>
+<li><a  href="https://filtromir.ru/catalog/magistralnye-filtry">Магистральные фильтры</a>
+<ul class="dropdown__menu"><li><a href="https://filtromir.ru/catalog/mehanicheskie-filtry"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312091352.jpg" alt="Механические фильтры"> <div class="gth">Механические фильтры</div></a></li>
+<li><a href="https://filtromir.ru/catalog/setchatye-filtry"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312092723.jpg" alt="Сетчатые фильтры"> <div class="gth">Сетчатые фильтры</div></a></li>
+<li><a href="https://filtromir.ru/catalog/meshochnye-filtry"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312094712.jpg" alt="Мешочные фильтры"> <div class="gth">Мешочные фильтры</div></a></li>
+<li><a href="https://filtromir.ru/catalog/diskovye-filtry"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312094757.jpg" alt="Дисковые фильтры"> <div class="gth">Дисковые фильтры</div></a></li>
+<li><a href="https://filtromir.ru/catalog/flantsevye-filtry"><div class="gth">Фланцевые фильтры</div></a></li>
+<li><a href="https://filtromir.ru/catalog/filtry-ot-nakipi"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312094611.jpg" alt="Фильтры от накипи"> <div class="gth">Фильтры от накипи</div></a></li>
+<li><a href="https://filtromir.ru/catalog/reduktory-davleniya-vody"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312093243.jpg" alt="Редукторы давления воды"> <div class="gth">Редукторы давления воды</div></a></li>
+<li><a href="https://filtromir.ru/catalog/multipatronnye-filtry"><img width="58" height="58" src="https://filtromir.ru/files/categories/slider-2223.jpg" alt="Мультипатронные фильтры"> <div class="gth">Мультипатронные фильтры</div></a></li>
+<li><a href="https://filtromir.ru/catalog/nasosnye-stantsii"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_240413190355.png" alt="Насосные станции"> <div class="gth">Насосные станции</div></a></li>
+</ul></li>
+<li><a  href="https://filtromir.ru/catalog/smennye-filtry">Сменные фильтры</a>
+<ul class="dropdown__menu"><li><a href="https://filtromir.ru/catalog/kartridzhi-dlya-obratnogo-osmosa"><img width="58" height="58" src="https://filtromir.ru/files/categories/kartridgi-osmos.jpg" alt="Картриджи для обратного осмоса"> <div class="gth">Картриджи для обратного осмоса</div></a></li>
+<li><a href="https://filtromir.ru/catalog/kartridzhi-dlya-protochnogo-filtra"><img width="58" height="58" src="https://filtromir.ru/files/categories/kartridgi-protochnie.jpg" alt="Картриджи для проточного фильтра"> <div class="gth">Картриджи для проточного фильтра</div></a></li>
+<li><a href="https://filtromir.ru/catalog/kartridzhi-dlya-magistralnogo-filtra"><img width="58" height="58" src="https://filtromir.ru/files/categories/kartridg-dlya-hol-vody.jpg" alt="Картриджи для магистрального фильтра"> <div class="gth">Картриджи для магистрального фильтра</div></a></li>
+<li><a href="https://filtromir.ru/catalog/membrany-obratnogo-osmosa"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312084644.jpg" alt="Мембраны обратного осмоса"> <div class="gth">Мембраны обратного осмоса</div></a></li>
+<li><a href="https://filtromir.ru/catalog/kartridzhi-dlya-filtrov-kuvshinov"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312093323.jpg" alt="Картриджи для фильтров кувшинов"> <div class="gth">Картриджи для фильтров кувшинов</div></a></li>
+<li><a href="https://filtromir.ru/catalog/filtruyuschie-zagruzki"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312092807.jpg" alt="Фильтрующие загрузки"> <div class="gth">Фильтрующие загрузки</div></a></li>
+<li><a href="https://filtromir.ru/catalog/filtry-dlya-purifajera"><img width="58" height="58" src="https://filtromir.ru/files/categories/filtry-purifaeyer1.jpg" alt="Фильтры для пурифайера"> <div class="gth">Фильтры для пурифайера</div></a></li>
+<li><a href="https://filtromir.ru/catalog/reagenty-dlya-vodopodgotovki"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_240126085146.png" alt="Реагенты для водоподготовки"> <div class="gth">Реагенты для водоподготовки</div></a></li>
+</ul></li>
+<li><a  href="https://filtromir.ru/catalog/komplektuyuschie-k-filtram">Комплектующие к фильтрам</a>
+<ul class="dropdown__menu"><li><a href="https://filtromir.ru/catalog/krany-dlya-filtra"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312093157.jpg" alt="Краны для фильтра"> <div class="gth">Краны для фильтра</div></a></li>
+<li><a href="https://filtromir.ru/catalog/krany-s-podklyucheniem-k-filtru"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_211102174311.jpg" alt="Краны с подключением к фильтру"> <div class="gth">Краны с подключением к фильтру</div></a></li>
+<li><a href="https://filtromir.ru/catalog/baki-dlya-obratnogo-osmosa"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312093350.jpg" alt="Баки для обратного осмоса"> <div class="gth">Баки для обратного осмоса</div></a></li>
+<li><a href="https://filtromir.ru/catalog/ultrafioletovye-lampy"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312093023.jpg" alt="Ультрафиолетовые лампы"> <div class="gth">Ультрафиолетовые лампы</div></a></li>
+<li><a href="https://filtromir.ru/catalog/smennye-elementy-dlya-uf-lamp"><img width="58" height="58" src="https://filtromir.ru/files/categories/smennie-lampy.jpg" alt="Сменные элементы для УФ ламп"> <div class="gth">Сменные элементы для УФ ламп</div></a></li>
+<li><a href="https://filtromir.ru/catalog/zapchasti-i-fitingi-dlya-filtrov"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312092825.jpg" alt="Запчасти и фитинги для фильтров"> <div class="gth">Запчасти и фитинги для фильтров</div></a></li>
+<li><a href="https://filtromir.ru/catalog/nasosy-pompy-dlya-obratnogo-osmosa"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312093131.jpg" alt="Насосы (помпы) для обратного осмоса"> <div class="gth">Насосы (помпы) для обратного осмоса</div></a></li>
+<li><a href="https://filtromir.ru/catalog/upravlyayuschie-klapana-k-filtram"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312092639.jpg" alt="Управляющие клапана"> <div class="gth">Управляющие клапана</div></a></li>
+<li><a href="https://filtromir.ru/catalog/korpusa-zasypnyh-filtrov"><img width="58" height="58" src="https://filtromir.ru/files/categories/Clip2net_200312092905.jpg" alt="Корпуса засыпных фильтров"> <div class="gth">Корпуса засыпных фильтров</div></a></li>
+<li><a href="https://filtromir.ru/catalog/nasosy-dlya-promyshlennyh-osmosov"><img width="58" height="58" src="https://filtromir.ru/files/categories/Sell-TDL-Vertical-inline-multistage.jpg" alt="Насосы для промышленных осмосов"> <div class="gth">Насосы для промышленных осмосов</div></a></li>
+<li><a href="https://filtromir.ru/catalog/nasosy-dozirovaniya"><img width="58" height="58" src="https://filtromir.ru/files/categories/dozir-nasos.jpg" alt="Насосы дозирования"> <div class="gth">Насосы дозирования</div></a></li>
+<li><a href="https://filtromir.ru/catalog/vodoschetchiki-impulsnye"><img width="58" height="58" src="https://filtromir.ru/files/categories/Schetchik-holodnoy-vody-impulsnyy-Uzmeter-Dn-25-Kitay.0x340.png" alt="Водосчётчики импульсные"> <div class="gth">Водосчётчики импульсные</div></a></li>
+</ul></li>
+<li><a  href="https://filtromir.ru/catalog/servis-filtra-dlya-vody">Услуги</a>
+</li>
+</ul></nav></div></div>
+
+
+
+
+	<div class="content">
+
+	  <!-- 🔧 MODIFIED START Advantages -->
+      <section class="advantages">
+        <div class="wrapper">
+          <h3 class="subtitle">Мы делаем воду чистой</h3>
+          <div class="advantages_items">
+            <div class="advantages_item">
+              <div class="header__advantages_item-icon">
+                <a href="https://filtromir.ru/dostavka"
+                  ><img
+                    width="51"
+                    height="39"
+                    src="https://filtromir.ru/design/filtromir2025/img/credit-card.png"
+                    class="img-responsive"
+                    title="Способы оплаты"
+                    alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                /></a>
+              </div>
+              <p>Любой способ<br />оплаты (НДС)</p>
+            </div>
+
+            <!-- This -->
+            <div class="advantages_item">
+              <div class="header__advantages_item-icon">
+                <a href="https://filtromir.ru/dostavka"
+                  ><img
+                    width="51"
+                    height="33"
+                    src="https://filtromir.ru/design/filtromir2025/images/drop.png"
+                    class="img-responsive"
+                    title="Полный цикл услуг по водоочистке"
+                    alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                /></a>
+              </div>
+              <p>Полный цикл услуг<br />по&nbsp;водоочистке</p>
+            </div>
+
+            <!-- This -->
+            <div class="advantages_item">
+              <div class="header__advantages_item-icon">
+                <a href="https://filtromir.ru/garantiya"
+                  ><img
+                    width="36"
+                    height="42"
+                    src="https://filtromir.ru/design/filtromir2025/img/shield.png"
+                    class="img-responsive"
+                    title="Гарантия"
+                    alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                /></a>
+              </div>
+              <p>
+                Гарантия<br />
+                от 1 до 3 лет
+              </p>
+            </div>
+
+            <!-- This -->
+            <div class="advantages_item">
+              <div class="header__advantages_item-icon">
+                <a href="https://filtromir.ru/contact"
+                  ><img
+                    width="42"
+                    height="40"
+                    src="https://filtromir.ru/design/filtromir2025/img/chat.png"
+                    class="img-responsive"
+                    title="Поддержка онлайн"
+                    alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                /></a>
+              </div>
+              <p>Клиентская<br />поддержка&nbsp;7/365</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 🔧 MODIFIED END Advantages -->
+<div class="carwash">
+ <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Чистая вода = качественная мойка и прачечная</h1>
+                <p class="hero-description">
+                    Удалите жёсткость, железо и песок — и забудьте про разводы, накипь, 
+                    поломки и перерасход химии. Подбор фильтров под ваш бизнес за 1 день.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#consultation" class="btn btn-primary">Подобрать фильтр</a>
+                    <a href="#consultation" class="btn btn-secondary">Получить консультацию инженера</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="img/i.webp" alt="Автомойка и прачечная" class="hero-main-image">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="consequences">
+        <div class="consequences-container">
+            <h2 class="consequences-title">Что происходит, если не фильтровать воду?</h2>
+            <p class="consequences-subtitle">
+                Каждая проблема с водой имеет свою цепочку негативных последствий для вашего бизнеса. Рассмотрим наиболее критичные из них:
+            </p>
+            
+            <div class="consequences-grid">
+                <div class="consequence-card">
+                    <h3 class="consequence-title">Накипь на тэнах</h3>
+                    <p class="consequence-text">
+                        Соли кальция и магния превращаются в твердые отложения при нагреве. Тэны перегреваются и выходят из строя в 3 раза быстрее нормы. На автомойке это означает остановку работы, в прачечной — срыв сроков выполнения заказов.
+                    </p>
+                    <div class="consequence-solution">
+                        <strong>Решение:</strong> Фильтр-умягчитель удаляет соли жёсткости до того, как они попадают в оборудование.
+                    </div>
+                </div>
+
+                <div class="consequence-card">
+                    <h3 class="consequence-title">Песок и механические частицы</h3>
+                    <p class="consequence-text">
+                        Абразивные частицы в воде повреждают насосы высокого давления, забивают форсунки, изнашивают клапаны. Ремонт насоса высокого давления стоит от 15 000 рублей, не считая упущенной выгоды.
+                    </p>
+                    <div class="consequence-solution">
+                        <strong>Решение:</strong> Механический предфильтр задерживает песок и частицы размером до 5 микрон.
+                    </div>
+                </div>
+
+                <div class="consequence-card">
+                    <h3 class="consequence-title">Железо и ржавчина</h3>
+                    <p class="consequence-text">
+                        Оставляют коричневые пятна на кузове и белье, окрашивают сантехнику, придают воде неприятный металлический привкус. Клиенты видят это как признак грязной воды и антисанитарии.
+                    </p>
+                    <div class="consequence-solution">
+                        <strong>Решение:</strong> Фильтр-обезжелезиватель удаляет до 98% растворенного железа.
+                    </div>
+                </div>
+            </div>
+            
+            <div class="consequences-cta">
+                <a href="#consultation" class="cta-btn">Хочу отфильтровать воду</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="detergent-problems">
+        <div class="detergent-problems-container">
+            <h2 class="detergent-problems-title">Проблемы с моющими средствами</h2>
+            
+            <div class="detergent-problems-content">
+                <div class="detergent-problem-column">
+                    <h3 class="detergent-column-title">Что происходит:</h3>
+                    <p class="detergent-column-text">
+                        В жёсткой воде эффективность моющих средств снижается на 40-60%. Соли кальция и магния вступают в реакцию с активными компонентами шампуней и стиральных порошков, образуя нерастворимые соединения.
+                    </p>
+                </div>
+                
+                <div class="detergent-problem-column">
+                    <h3 class="detergent-column-title">Последствия для бизнеса:</h3>
+                    <ul class="detergent-consequences-list">
+                        <li>Перерасход моющих средств в 1,5-2 раза</li>
+                        <li>Снижение качества мойки и стирки</li>
+                        <li>Повышение себестоимости каждой услуги</li>
+                    </ul>
+                </div>
+                
+                <div class="detergent-problem-column">
+                    <h3 class="detergent-column-title">Решение:</h3>
+                    <p class="detergent-column-text">
+                        Умягченная вода позволяет использовать моющие средства в точной дозировке, указанной производителем, и получать максимальную эффективность.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="detergent-problems-cta">
+                <a href="#consultation" class="cta-btn">Хочу решение</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="filters-intro">
+        <div class="filters-intro-container">
+            <h2 class="filters-intro-title">Какие фильтры нужны вашему бизнесу?</h2>
+            <p class="filters-intro-subtitle">
+                Оптимальное решение зависит от исходного качества воды и специфики вашего бизнеса. Предлагаем наиболее востребованные типы фильтров для автомоек и прачечных:
+            </p>
+            
+            <div class="filters-grid">
+                <div class="filter-card">
+                    <h3 class="filter-title">Фильтр-умягчитель</h3>
+                    <p class="filter-description">
+                        Удаляет соли кальция и магния, предотвращая образование накипи на нагревательных элементах и разводов на поверхностях.
+                    </p>
+                    <ul class="filter-benefits">
+                        <li>Увеличивает срок службы оборудования в 2-3 раза</li>
+                        <li>Снижает расход моющих средств на 30-50%</li>
+                        <li>Улучшает качество пены и мойки</li>
+                    </ul>
+                    <a href="#consultation" class="filter-btn">Подобрать умягчитель</a>
+                </div>
+
+                <div class="filter-card">
+                    <h3 class="filter-title">Фильтр-обезжелезиватель</h3>
+                    <p class="filter-description">
+                        Удаляет растворенное железо и предотвращает появление ржавых пятен на поверхностях и текстиле.
+                    </p>
+                    <ul class="filter-benefits">
+                        <li>Исключает появление ржавых пятен на авто</li>
+                        <li>Предотвращает пожелтение белья</li>
+                        <li>Защищает оборудование от коррозии</li>
+                    </ul>
+                    <a href="#consultation" class="filter-btn">Подобрать обезжелезиватель</a>
+                </div>
+
+                <div class="filter-card">
+                    <h3 class="filter-title">Промышленный осмос</h3>
+                    <p class="filter-description">
+                        Глубокая очистка воды от всех примесей для прачечных с высокими требованиями к качеству воды и всех автомоек.
+                    </p>
+                    <ul class="filter-benefits">
+                        <li>Идеально для стирки деликатных тканей</li>
+                        <li>Необходим для прямого подключения к бойлерам</li>
+                        <li>Удаляет до 99% всех примесей</li>
+                    </ul>
+                    <a href="#consultation" class="filter-btn">Подобрать осмос</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cases">
+        <div class="cases-container">
+            <h2 class="cases-title">Как фильтры повлияли на работу заведений</h2>
+            
+            <div class="cases-grid">
+                <div class="case-card">
+                    <div class="case-image">
+                        <img src="img/автомойка).webp" alt="Автомойка 'Блеск', Ростов-на-Дону" class="case-real-image">
+                    </div>
+                    <div class="case-content">
+                        <h3 class="case-title">Автомойка "Блеск", Ростов-на-Дону</h3>
+                        
+                        <div class="case-section">
+                            <h4 class="case-section-title">До установки фильтров:</h4>
+                            <p class="case-text">Постоянные жалобы на разводы, замена 2 тэнов за сезон, перерасход химии.</p>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h4 class="case-section-title">После установки:</h4>
+                            <p class="case-text">Клиенты довольны качеством мойки, техника работает без сбоев, расход моющих средств снизился на 30%, выручка выросла на 15% за счет положительных отзывов.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="case-card">
+                    <div class="case-image">
+                        <img src="img/прачечная.webp" alt="Прачечная при мини-отеле, Краснодар" class="case-real-image">
+                    </div>
+                    <div class="case-content">
+                        <h3 class="case-title">Прачечная при мини-отеле, Краснодар</h3>
+                        
+                        <div class="case-section">
+                            <h4 class="case-section-title">До установки фильтров:</h4>
+                            <p class="case-text">Белье после стирки имело сероватый оттенок, присутствовал затхлый запах, бойлер требовал регулярного ремонта.</p>
+                        </div>
+                        
+                        <div class="case-section">
+                            <h4 class="case-section-title">После установки:</h4>
+                            <p class="case-text">Белоснежное белье без запахов, ремонтов оборудования не требовалось в течение полутора лет, снижение затрат на моющие средства и электроэнергию.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cases-cta">
+        <div class="cases-cta-container" style="text-align: center;">
+            <a href="#consultation" class="btn btn-primary cases-cta-btn">Хочу также</a>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="reviews-container">
+            <h2 class="reviews-title">Отзывы наших клиентов</h2>
+            <p class="reviews-subtitle">
+                Более 150 довольных клиентов по всему Югу России рекомендуют наши системы водоочистки
+            </p>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="img/челавтом.webp" alt="Алексей Петров" class="avatar-img">
+                        </div>
+                        <div class="review-info">
+                            <h3 class="review-name">Алексей Петров</h3>
+                            <p class="review-position">Владелец автомойки "Блеск", Ростов-на-Дону</p>
+                        </div>
+                        <div class="review-rating">
+                            <span class="stars">★★★★★</span>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        "Установили систему умягчения полгода назад. Результат превзошел ожидания! Клиенты перестали жаловаться на разводы, расход химии снизился на треть. Окупилась за 8 месяцев."
+                    </p>
+                    <div class="review-date">15 ноября 2023</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="img/дирпрач.webp" alt="Марина Сидорова" class="avatar-img">
+                        </div>
+                        <div class="review-info">
+                            <h3 class="review-name">Марина Сидорова</h3>
+                            <p class="review-position">Директор прачечной "Чистота", Краснодар</p>
+                        </div>
+                        <div class="review-rating">
+                            <span class="stars">★★★★★</span>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        "Работаем с ФильтроМир уже 2 года. Качество воды стало идеальным, белье белоснежное. Сервисное обслуживание на высоте - приезжают по первому звонку."
+                    </p>
+                    <div class="review-date">8 ноября 2023</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <img src="img/управтом.webp" alt="Игорь Волков" class="avatar-img">
+                        </div>
+                        <div class="review-info">
+                            <h3 class="review-name">Игорь Волков</h3>
+                            <p class="review-position">Управляющий сетью автомоек "Аква", Волгоград</p>
+                        </div>
+                        <div class="review-rating">
+                            <span class="stars">★★★★★</span>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        "Поставили системы на 5 автомоек. Везде одинаково отличный результат. Техника работает без поломок, клиенты довольны. Рекомендую всем коллегам!"
+                    </p>
+                    <div class="review-date">28 октября 2023</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-company">
+        <div class="about-company-container">
+            <h2 class="about-company-title">ФильтроМир — надёжный подрядчик по воде</h2>
+            <p class="about-company-subtitle">
+                Мы специализируемся на решениях для бизнеса, понимаем особенности работы автомоек и прачечных и предлагаем индивидуальный подход к каждому клиенту.
+            </p>
+            
+            <div class="about-advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4C24 4 8 12 8 28C8 36.837 15.163 44 24 44C32.837 44 40 36.837 40 28C40 12 24 4 24 4Z" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M24 20V32" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M20 24H28" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">Опыт работы с бизнесом более 10 лет</h3>
+                    <p class="advantage-text">
+                        За это время мы установили системы водоочистки более чем в 150 автомойках и прачечных по всему Югу России. Наши специалисты знают все особенности водоснабжения в регионе.
+                    </p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M6 18L24 6L42 18V38C42 39.0609 41.5786 40.0783 40.8284 40.8284C40.0783 41.5786 39.0609 42 38 42H10C8.93913 42 7.92172 41.5786 7.17157 40.8284C6.42143 40.0783 6 39.0609 6 38V18Z" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 42V24H30V42" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">Подбор по анализу воды и оборудованию</h3>
+                    <p class="advantage-text">
+                        Мы не продаем типовые решения. Каждая система проектируется индивидуально на основе анализа вашей воды и с учетом особенностей используемого оборудования.
+                    </p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="18" stroke="#3B82F6" stroke-width="2"/>
+                            <path d="M24 12V24L32 28" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">Монтаж под ключ и сервисное обслуживание</h3>
+                    <p class="advantage-text">
+                        Наши инженеры произведут монтаж с минимальными перебоями в работе вашего бизнеса. После установки мы обеспечиваем регулярное сервисное обслуживание и поставку расходных материалов.
+                    </p>
+                </div>
+
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M22 12H26V16H22V12Z" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M24 16V24" stroke="#3B82F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="24" cy="24" r="18" stroke="#3B82F6" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="advantage-title">Поддержка 7 дней в неделю</h3>
+                    <p class="advantage-text">
+                        Наша сервисная служба работает без выходных. В случае аварийной ситуации мы оперативно решим проблему, чтобы ваш бизнес не простаивал.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="about-company-cta" style="text-align: center; margin-top: 40px;">
+                <a href="#consultation" class="btn btn-primary">Хочу стать вашим клиентом</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="faq-container">
+            <h2 class="faq-title">Часто задаваемые вопросы</h2>
+            
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <div class="faq-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M4 8H28" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4 16H28" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4 24H28" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="faq-question">Сколько литров/час нужно для мойки на 2 поста?</h3>
+                    <p class="faq-answer">
+                        Для автомойки на 2 поста оптимальная производительность системы водоочистки составляет 1500-2000 литров в час. Это учитывает одновременную работу обоих постов с запасом мощности. При выборе системы мы также учитываем пиковые нагрузки в часы наибольшей загруженности.
+                    </p>
+                </div>
+
+                <div class="faq-card">
+                    <div class="faq-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="12" r="8" stroke="#64748b" stroke-width="2"/>
+                            <path d="M8 20C8 20 10.5 18 16 18C21.5 18 24 20 24 20" stroke="#64748b" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="faq-question">Нужно ли ставить фильтр на каждый бойлер?</h3>
+                    <p class="faq-answer">
+                        Нет, достаточно установить одну централизованную систему фильтрации перед входом в водопроводную систему вашего бизнеса. Все бойлеры и другое оборудование будут получать уже очищенную воду. Это экономически более выгодно, чем установка отдельных фильтров.
+                    </p>
+                </div>
+
+                <div class="faq-card">
+                    <div class="faq-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="6" y="6" width="20" height="14" rx="2" stroke="#64748b" stroke-width="2"/>
+                            <path d="M26 10L16 17L6 10" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="faq-question">Как часто менять смолу и картриджи?</h3>
+                    <p class="faq-answer">
+                        Периодичность замены зависит от качества исходной воды и интенсивности использования. В среднем, механические картриджи меняются раз в 3-6 месяцев, ионообменная смола в умягчителях — раз в 3-5 лет. Мы составляем индивидуальный график обслуживания для каждого клиента.
+                    </p>
+                </div>
+
+                <div class="faq-card">
+                    <div class="faq-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="12" stroke="#64748b" stroke-width="2"/>
+                            <path d="M12 16L15 19L20 13" stroke="#64748b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="faq-question">Сколько стоит монтаж?</h3>
+                    <p class="faq-answer">
+                        Стоимость монтажа зависит от сложности системы и объема работ. В среднем она составляет 15-25% от стоимости оборудования. Мы предоставляем детальную смету до начала работ, чтобы у вас не возникло неожиданных расходов.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-cta">
+        <div class="faq-cta-container" style="text-align: center; margin-top: 40px; margin-bottom: 80px;">
+            <a href="#consultation" class="btn btn-primary">Рассчитать персональные условия</a>
+        </div>
+    </section>
+
+    <section class="roi">
+        <div class="roi-container">
+            <div class="roi-header">
+                <div class="roi-badge">RETURN ON INVESTMENT</div>
+                <h2 class="roi-title">Рентабельность инвестиций в водоподготовку</h2>
+                <p class="roi-subtitle">
+                    Установка системы фильтрации воды — это не расход, а инвестиция, которая окупается за счет снижения затрат и увеличения доходов.
+                </p>
+            </div>
+            
+            <div class="roi-chart">
+                <div class="roi-arrow">
+                    <svg width="600" height="200" viewBox="0 0 600 200" fill="none">
+                        <path d="M50 150 Q200 50 350 100 Q450 130 550 50" stroke="#22c55e" stroke-width="3" fill="none"/>
+                        <path d="M540 45 L550 50 L540 55 M550 50 L545 50" stroke="#22c55e" stroke-width="2" fill="none"/>
+                    </svg>
+                </div>
+                
+                <div class="roi-stats">
+                    <div class="roi-stat">
+                        <div class="roi-number">30%</div>
+                        <div class="roi-label">Снижение расхода химии</div>
+                        <div class="roi-description">
+                            В мягкой воде моющие средства работают эффективнее, что позволяет сократить их расход на треть без потери качества услуг.
+                        </div>
+                    </div>
+                    
+                    <div class="roi-stat">
+                        <div class="roi-number">50%</div>
+                        <div class="roi-label">Меньше поломок</div>
+                        <div class="roi-description">
+                            Отсутствие накипи и механических примесей увеличивает срок службы оборудования и сокращает расходы на ремонт вдвое.
+                        </div>
+                    </div>
+                    
+                    <div class="roi-stat">
+                        <div class="roi-number">15%</div>
+                        <div class="roi-label">Рост выручки</div>
+                        <div class="roi-description">
+                            Улучшение качества услуг ведет к увеличению числа постоянных клиентов и положительным рекомендациям.
+                        </div>
+                    </div>
+                    
+                    <div class="roi-stat">
+                        <div class="roi-number">8-12</div>
+                        <div class="roi-label">Месяцев окупаемость</div>
+                        <div class="roi-description">
+                            Инвестиции в качественную систему водоочистки полностью возвращаются в течение первого года эксплуатации.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="consultation" id="consultation">
+        <div class="consultation-container">
+            <div class="consultation-content">
+                <div class="consultation-info">
+                    <h2 class="consultation-title">Получите подбор системы под вашу автомойку или прачечную</h2>
+                    <p class="consultation-description">
+                        Наш менеджер свяжется с вами, соберет параметры воды и оборудования и предложит точное решение для вашего бизнеса. Мы подберем оптимальную конфигурацию системы, которая решит все проблемы с водой и не будет иметь избыточных компонентов.
+                    </p>
+                </div>
+                
+                <div class="consultation-image">
+                    <img src="img/инженер.webp" alt="Инженер по водоподготовке" class="engineer-real-image">
+                </div>
+
+                <div class="consultation-right">
+                    <div class="consultation-form-card">
+                        <h3 class="consultation-form-title">Нужна очистка воды?</h3>
+                        <p class="consultation-form-subtitle">Оставьте заявку — подберём фильтр и обеспечим чистую воду!</p>
+                        
+                        <form class="consultation-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">*Имя</label>
+                                <input type="text" id="name" name="name" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" class="form-label">*Телефон</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="comment" class="form-label">Комментарий (необязательно)</label>
+                                <textarea id="comment" name="comment" class="form-textarea" rows="3"></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="captcha" class="form-label">*Контрольный вопрос: 7 + 7 = ?</label>
+                                <input type="text" id="captcha" name="captcha" class="form-input" required>
+                            </div>
+                            
+                            
+                            
+                            <button type="submit" class="form-submit-btn">Оставить заявку</button>
+                        </form>
+                    </div>
+
+                    <div class="consultation-benefits">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2"/>
+                                    <path d="М12 8L9 11L7 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <span class="benefit-text">После заполнения формы вы получите:</span>
+                        </div>
+                        
+                        <ul class="benefits-list">
+                            <li>Консультацию инженера по водоподготовке</li>
+                            <li>Предварительный расчет системы фильтрации</li>
+                            <li>Коммерческое предложение с детализацией</li>
+                            <li>Расчет окупаемости для вашего бизнеса</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#consultation" class="consultation-btn">Получить расчёт системы</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__left">
+          <a href="." class="logo"><img width="165" height="59" src="https://filtromir.ru/design/filtromir2025/img/filtromir-invert-165.png" class="img-responsive" title="Лого" alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"></a>
+
+          <p class="copyright">Все права защищены (с)<br> Основано в 2015</p>
+          <br>
+          <a href="https://filtromir.ru/vozvrat-tovara-kuplennogo-v-filtromir">Возврат товара</a><br><br>
+          <a href="https://filtromir.ru/o-kompanii">О компании</a>
+          <div class="social">
+            <a href="https://vk.com/filtromir" rel="nofollow" target="_blank"><img width="25" height="26" src="https://filtromir.ru/design/filtromir2025/img/vk.png" class="img-responsive" title="Мы в ВКонтакте" alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"></a>
+            <a href="https://t.me/Filtromir2022" rel="nofollow" target="_blank"><img width="25" height="26" src="https://filtromir.ru/design/filtromir2025/img/teleg.png" class="img-responsive" title="Написать нам в Телеграмм" alt="чат или задать вопрос фильтрам для воды в Ростове-на-Дону по самым низким ценам"></a>
+          </div>
+        </div>
+        
+        <div class="footer__menu">
+          <ul class="footer__menu_left">
+            <li><a href="." class="footer__menu-active">Главная</a></li>
+            <li><a href="https://filtromir.ru/aktsii">Акционные предложения</a></li>
+            <li><a href="blog">Полезная информация</a></li>
+            <li><a href="/dostavka">Доставка и оплата</a></li>
+            <li><a href="/nashi-raboty">Наши работы</a></li>
+            <li><a href="/blog/otzyvy">Отзывы</a></li>
+            <li><a href="https://filtromir.ru/politika-zaschity-i-obrabotki-personalnyh-dannyh">Политика обработки персональных данных</a></li>
+            <li><a href="contact">Контакты</a></li>
+          </ul>
+          <ul class="footer__menu_right">
+            <li><a href="/catalog/obratnyj-osmos">Обратный осмос</a></li>
+            <li><a href="/catalog/protochnye-filtry">Проточные фильтры</a></li>
+            <li><a href="/catalog/filtry-na-ves-dom">Фильтры на весь дом</a></li>
+            <li><a href="/catalog/magistralnye-filtry">Магистральные фильтры</a></li>
+            <li><a href="/catalog/smennye-filtry">Сменные фильтры</a></li>
+            <li><a href="/catalog/komplektuyuschie-k-filtram">Комплектующие к фильтрам</a></li>
+            <li><a href="/service">Услуги</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer__contacts">
+          <p><a href="mailto:info@filtromir.ru">info@filtromir.ru</a></p>
+          <div class="footer__contacts_phone">
+            <a href="tel:+79381001848">+7 (938) 100-18-48</a>
+            <a href="tel:+79676642300">+7 (967) 664-23-00</a>
+          </div>
+          <div class="footer__contacts_address">
+            <p>Наши магазины:</p>
+            <p>Ростов-на-Дону, ул.Вавилова, 54</p>
+            <p>Краснодар, ул.Российская, 372</p>
+          </div>
+          <a class="btn vacan" href="/vakansii" title="Вакансии компании">Вакансии</a>
+        </div>
+      </div>
+      <div align="center"><h3><b>МЫ ДЕЛАЕМ ВОДУ ЧИСТОЙ</b></h3></div>
+    </footer>
+
+    <script>
+        // Плавная прокрутка к форме консультации
+        document.addEventListener('DOMContentLoaded', function() {
+            const consultationLinks = document.querySelectorAll('a[href="#consultation"]');
+            
+            consultationLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const consultationSection = document.getElementById('consultation');
+                    if (consultationSection) {
+                        consultationSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
